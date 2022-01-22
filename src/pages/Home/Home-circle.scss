@@ -1,0 +1,19 @@
+.home-circle {
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.4s;
+  &:hover {
+    color:white;
+    box-shadow: 0 0 0 88px rgba(255,255,255,0.1)
+  }
+}
+
+h4 {
+  color: #0B0D17;
+}
