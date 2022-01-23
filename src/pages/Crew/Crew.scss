@@ -1,0 +1,51 @@
+.crew {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: url('../../../public/crew/background-crew-desktop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-origin: border-box;
+  .crew-textbox {
+    position: absolute;
+    top: 44vh;
+    left: 11vw;
+    width: 28vw;
+    h4 {
+      color: white;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+      margin: 0;
+    }
+    h3 {
+      margin-top: 2vh;
+      margin-bottom: 3vh;
+    }
+    .body-text {
+      color: #D0D6F9;
+    }
+  }
+  .crew-circle-container {
+    display: flex;
+    position: absolute;
+    left: 11vw;
+    bottom: 10vh;
+    .crew-circle {
+      cursor: pointer;
+      width: 2vh;
+      height: 2vh;
+      border-radius: 50%;
+      background-color: white;
+      margin-right: 1.8vw;;
+    }
+  }
+  .crew-image {
+    position: absolute;
+    right: 12vw;
+    bottom: 0;
+  }
+}

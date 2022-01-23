@@ -1,28 +1,26 @@
-import { useState } from 'react';
 import { PlanetEnum } from '@model/planet-enum';
 import { planetDataMapping } from '@data/destination-planet';
 import './Destination-textbox.scss';
 
 interface Props {
-  planetStateHandler: Function
+  planetStateHandler: Function,
+  planetName: string
 }
 
 export const DestinationTextbox = (props: Props) => {
-  const [planet, setPlanet] = useState('MOON')
-  const planetData = planetDataMapping.get(planet);
+  const planetData = planetDataMapping.get(props.planetName);
   const planetArr: string[] = [];
   for(const value in PlanetEnum) {
     planetArr.push(value);
   }
   function changePlanetHandler(planet: string) {
-    setPlanet(planet);
     props.planetStateHandler(planet);
   }
   return (
     <div className='destination-textbox'>
       <div className='nav-container'>
-        {planetArr.map((planet) => {
-          return (<div className='nav-text' onClick={() => changePlanetHandler(planet)}>{planet}</div>);
+        {planetArr.map((planet, i) => {
+          return (<div key={i} className='nav-text' onClick={() => changePlanetHandler(planet)}>{planet}</div>);
         })}
       </div>
       <h2>{planetData?.title}</h2>

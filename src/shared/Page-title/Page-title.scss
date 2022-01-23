@@ -1,12 +1,14 @@
 .page-title {
   display: flex;
-  margin-top: 212px;
-  margin-left: 166.5px;
+  position: absolute;
+  top: 24vh;
+  left: 11vw;
   width: auto;
   color: white;
   .title-number {
     mix-blend-mode: normal;
     opacity: 0.25;
     margin-right: 28px;
+    font-weight: 700;
   }
 }

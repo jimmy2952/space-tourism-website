@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Navigate, Routes } from "react-router-dom";
 import { NavBar } from './Navigation/Nav-bar';
 import { HomePage } from './pages/Home/Home';
 import { DestinationPage } from './pages/Destination/Destination';
+import { CrewPage } from './pages/Crew/Crew';
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
   return (
       <BrowserRouter>
         <NavBar />
-        <DestinationPage />
+        <CrewPage />
+        {/* <DestinationPage /> */}
         {/* <Routes>
           <Route path='/' element={<NavBar />} />
           <Navigate to='/' />

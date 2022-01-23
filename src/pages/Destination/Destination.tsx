@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { PageTitle } from '@shared/Page-title/Page-title';
 import { DestinationPlanet } from './Destination-planet';
-import { PlanetEnum } from '@model/planet-enum';
 import { DestinationTextbox } from './Destination-textbox';
 import './Destination.scss';
 
@@ -12,14 +11,13 @@ export const DestinationPage = () => {
     text: 'PICK YOUR DESTINATION'
   }
   function planetStateChange(textPlanet: string) {
-    console.log(textPlanet);
     setPlanet(textPlanet);
   }
   return (
     <div className="destination">
       <PageTitle title={title} />
       <DestinationPlanet planetName={planet} />
-      <DestinationTextbox planetStateHandler={planetStateChange} />
+      <DestinationTextbox planetName={planet} planetStateHandler={planetStateChange} />
     </div>
   );
 }
