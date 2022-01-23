@@ -4,6 +4,7 @@ import './App.scss';
 import { BrowserRouter, Route, Navigate, Routes } from "react-router-dom";
 import { NavBar } from './Navigation/Nav-bar';
 import { HomePage } from './pages/Home/Home';
+import { DestinationPage } from './pages/Destination/Destination';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
   return (
       <BrowserRouter>
         <NavBar />
-        <HomePage />
+        <DestinationPage />
         {/* <Routes>
           <Route path='/' element={<NavBar />} />
           <Navigate to='/' />

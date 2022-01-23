@@ -1,7 +1,8 @@
 nav {
-  width: 830px;
+  width: 60%;
   height: 96px;
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(81.5485px);
-  margin-left: auto
+  margin-left: auto;
+  box-sizing: border-box;
 }

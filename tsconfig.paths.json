@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": ["assets/*"],
+      "@shared/*": ["src/shared/*"],
+      "@model/*": ["src/model/*"],
+      "@data/*": ["src/data/*"]
+    }
+  }
+}

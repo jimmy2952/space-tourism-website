@@ -1,0 +1,37 @@
+.destination-textbox {
+  position: absolute;
+  right: 11vw;
+  bottom: 13vh;
+  width: 30vw;
+  .nav-container {
+    display: flex;
+    .nav-text {
+      font-size: 1.4rem;
+      margin-right: 3vw;
+      cursor: pointer;
+    }
+  }
+  h2 {
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+  }
+  .body-text {
+    color: #D0D6F9;
+  }
+  hr {
+    margin-top: 6vh;
+    width: 30vw;
+    border-top: 1px solid #383B4B;
+  }
+  .text-footer {
+    display: flex;
+    .subheading-container {
+      width: 50%;
+      margin-top: 3vh;
+      .subheading2 {
+        margin-bottom: 1vh;
+        color: #D0D6F9;
+      }
+    }
+  }
+}
