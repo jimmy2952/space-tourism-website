@@ -6,6 +6,7 @@ import { NavBar } from './Navigation/Nav-bar';
 import { HomePage } from './pages/Home/Home';
 import { DestinationPage } from './pages/Destination/Destination';
 import { CrewPage } from './pages/Crew/Crew';
+import { TechnologyPage } from './pages/Technology/Technology';
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
   return (
       <BrowserRouter>
         <NavBar />
-        <CrewPage />
+        <TechnologyPage />
         {/* <DestinationPage /> */}
         {/* <Routes>
           <Route path='/' element={<NavBar />} />

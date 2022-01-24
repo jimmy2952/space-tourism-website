@@ -5,7 +5,7 @@ import { DestinationTextbox } from './Destination-textbox';
 import './Destination.scss';
 
 export const DestinationPage = () => {
-  const [planet, setPlanet] = useState('MOON')
+  const [planet, setPlanet] = useState('MOON');
   const title: { number: string; text: string; } = {
     number: '01',
     text: 'PICK YOUR DESTINATION'
