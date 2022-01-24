@@ -13,6 +13,7 @@ nav {
     height: 100%;
     margin-right: 3.4vw;
     align-content: center;
+    position: relative;
     cursor: pointer;
     .nav-text {
       margin: auto;
@@ -20,6 +21,31 @@ nav {
     .number {
       font-weight: bold;
       margin-right: 0.7vw;
+    }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    border-bottom: 4px solid transparent;
+    transition: 0.4s;
+    position: relative;
+    &::before {
+      content: '';
+      width: 0;
+      background-color: white;
+      height: 3px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transition: 0.4s;
+      opacity: 0.5;
+    }
+    &:hover::before, &:active::before, &.active::before {
+      width: 100%;
+    }
+    &.active::before {
+      opacity: 1;
     }
   }
 }
