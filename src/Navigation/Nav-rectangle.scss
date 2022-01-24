@@ -5,4 +5,21 @@ nav {
   backdrop-filter: blur(81.5485px);
   margin-left: auto;
   box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 11.5vw;
+  .nav-item {
+    display: flex;
+    height: 100%;
+    margin-right: 3.4vw;
+    align-content: center;
+    cursor: pointer;
+    .nav-text {
+      margin: auto;
+    }
+    .number {
+      font-weight: bold;
+      margin-right: 0.7vw;
+    }
+  }
 }

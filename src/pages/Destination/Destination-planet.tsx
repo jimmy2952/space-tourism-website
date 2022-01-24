@@ -19,6 +19,6 @@ export const DestinationPlanet = (props: Props) => {
     ['TITAN', PlanetFileNameEnum.TITAN]
   ])
   return (
-    <img src={`/destination/${planetMapping.get(planet)}.png`} alt="mars"></img>
+    <img className="destination-image" src={`/destination/${planetMapping.get(planet)}.png`} alt="mars"></img>
   );
 }

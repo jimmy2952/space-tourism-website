@@ -17,15 +17,16 @@ function App() {
     </Routes>
   )
   return (
-      <BrowserRouter>
+      <>
         <NavBar />
-        <TechnologyPage />
-        {/* <DestinationPage /> */}
-        {/* <Routes>
-          <Route path='/' element={<NavBar />} />
-          <Navigate to='/' />
-        </Routes> */}
-      </BrowserRouter>
+        <Routes>
+          <Route path='/destination' element={<DestinationPage />} />
+          <Route path='/crew' element={<CrewPage />} />
+          <Route path='/technology' element={<TechnologyPage />} />
+          <Route path='/' element={<HomePage />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </>
   );
 }
 
