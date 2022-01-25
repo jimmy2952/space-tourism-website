@@ -20,7 +20,11 @@ export const DestinationTextbox = (props: Props) => {
     <div className='destination-textbox'>
       <div className='nav-container'>
         {planetArr.map((planet, i) => {
-          return (<div key={i} className='nav-text' onClick={() => changePlanetHandler(planet)}>{planet}</div>);
+          return (
+          <div key={i} className="nav-text" onClick={() => changePlanetHandler(planet)}>
+            {planet === props.planetName ? <span className="nav-active"></span> : null}
+            {planet}
+          </div>);
         })}
       </div>
       <h2>{planetData?.title}</h2>

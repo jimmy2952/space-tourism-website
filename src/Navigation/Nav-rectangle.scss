@@ -30,7 +30,7 @@ nav {
     border-bottom: 4px solid transparent;
     transition: 0.4s;
     position: relative;
-    &::before {
+    &:before {
       content: '';
       width: 0;
       background-color: white;
@@ -41,7 +41,7 @@ nav {
       transition: 0.4s;
       opacity: 0.5;
     }
-    &:hover::before, &:active::before, &.active::before {
+    &:hover:before, &:active:before, &.active:before {
       width: 100%;
     }
     &.active::before {

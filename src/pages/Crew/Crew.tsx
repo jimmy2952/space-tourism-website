@@ -13,7 +13,6 @@ export const CrewPage = () => {
     text: 'MEET YOUR CREW'
   }
   function changeCrewHandler(crew: string) {
-    console.log(crew);
     setCrew(crew);
   }
   return (
@@ -25,9 +24,9 @@ export const CrewPage = () => {
         <div className="body-text">{crewData?.description}</div>
       </div>
       <div className="crew-circle-container">
-        {crewArr.map((crew, index) => {
+        {crewArr.map((c, index) => {
           return (
-            <div key={index} className="crew-circle" onClick={() => changeCrewHandler(crew)}></div>
+            <div key={index} className={`crew-circle ${crew === c ? 'crew-circle-active' : null}`} onClick={() => changeCrewHandler(c)}></div>
           );
         })}
       </div>

@@ -18,9 +18,9 @@ export const TechnologyPage = () => {
       <PageTitle title={title} />
       <div className="left-container">
         <div className="circle-container">
-          {technologyData.map((tech, index) => {
+          {technologyData.map((t, index) => {
             return(
-              <div key={index} className="circle-item" onClick={() => changeTechHandler(index)}><h4>{index + 1}</h4></div>
+              <div key={index} className={`circle-item ${index === tech ? 'circle-active' : null}`} onClick={() => changeTechHandler(index)}><h4>{index + 1}</h4></div>
             );
           })}
         </div>

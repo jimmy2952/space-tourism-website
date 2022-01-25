@@ -39,8 +39,19 @@
       width: 2vh;
       height: 2vh;
       border-radius: 50%;
-      background-color: white;
-      margin-right: 1.8vw;;
+      background: #FFFFFF;
+      mix-blend-mode: normal;
+      opacity: 0.17;
+      margin-right: 1.8vw;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    .crew-circle-active {
+      opacity: 1;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
   .crew-image {
