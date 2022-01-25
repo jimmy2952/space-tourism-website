@@ -1,8 +1,10 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import './Nav-circle.scss';
 
 export const NavCircle = () => {
   return (
-    <div className='circle'></div>
+    <Link to="/">
+      <div className='circle'></div>
+    </Link>
   );
 }
